@@ -8,7 +8,7 @@ let guid = 1
 
 const useStore = create((set, get) => {
   let spline = new Curves.CinquefoilKnot(70)
-  let track = new THREE.TubeBufferGeometry(spline, 5000, 0.02, 100, true)
+  let track = new THREE.TubeBufferGeometry(spline, 5000, 0.01, 100, true)
   let cancelLaserTO = undefined
   let cancelExplosionTO = undefined
   const box = new THREE.Box3()

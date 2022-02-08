@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import Stars from './3d/Stars'
 import Planets from './3d/Planets'
 import Effects from './3d/Effects'
+import Rocks from './3d/Rocks'
 import Rings from './3d/Rings'
 import Ship from './3d/Ship'
 import Rig from './3d/Rig'
@@ -32,6 +33,7 @@ export default function App() {
         <Rings />
         <Track/>
         <Suspense fallback={null}>
+        <Rocks />
           <Planets />
           <Rig>
             <Ship />
